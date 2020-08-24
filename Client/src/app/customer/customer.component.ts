@@ -50,10 +50,10 @@ export class CustomerComponent implements OnInit {
     onSubmit() {
       if(!this.enabled){
         this.apiService.updateUser(this.addForm.value).subscribe(data=>{
-          this.router.navigate(['customers']);
+          this.router.navigate(['home']);
          })
       }else{
-        this.router.navigate(['customers']);
+        this.router.navigate(['home']);
 
       }
 
