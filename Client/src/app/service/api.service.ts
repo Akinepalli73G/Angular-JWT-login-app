@@ -9,9 +9,9 @@ import { inject } from '@angular/core/testing';
 export class ApiService {
 
     constructor( private http : HttpClient){}
-   loginUrl: string = 'http://localhost:8080/loginInfo/';
-    baseUrl: string = 'http://localhost:8080/users/';
-    deleteUrl: string = 'http://localhost:8080/deleteUser/';
+    loginUrl: string = 'https://angular-1.azurewebsites.net/loginInfo/';
+    baseUrl: string = 'https://angular-1.azurewebsites.net/users/';
+    deleteUrl: string = 'https://angular-1.azurewebsites.net/deleteUser/';
 
     getUsers() : Observable<ApiResponse>{
         return this.http.get<ApiResponse>(this.baseUrl)
